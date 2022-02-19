@@ -1,0 +1,49 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #28a128;
+    border-radius: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 20rem;
+
+    &:hover {
+      background-color: #84c984;
+    }
+  }
+
+  .pages {
+    margin: 20px 0;
+
+    .page, .current-page {
+      border: 1px solid lightgray;
+      border-radius: 100%;
+      padding: 5px 10px;
+      margin: 0 10px;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+    }
+
+    .current-page {
+      border: 2px solid gray;
+      font-weight: 700;
+    }
+  }
+}
+

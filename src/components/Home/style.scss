@@ -1,0 +1,49 @@
+#root {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0 5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  &__picture {
+    max-width: 30rem;
+    max-height: 30rem;
+  }
+
+  &__description {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 3rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50rem;
+  }
+
+  &__btn {
+    margin-top: 4rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    background-color: #28a128;
+    border-radius: 1rem;
+    max-width: 20rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #84c984;
+    }
+  }
+
+}
