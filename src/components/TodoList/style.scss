@@ -7,6 +7,11 @@
   align-items: center;
   justify-content: space-between;
 
+  &__body {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
 
   &__title {
     font-size: 1rem;
@@ -19,10 +24,16 @@
     border: none;
     font-size: 1.1rem;
     cursor: pointer;
+    margin-right: 1rem;
 
     &:hover {
       color: lightslategrey;
     }
   }
 
+}
+
+.checked {
+  background-color: #84c984;
+  text-decoration: line-through;
 }

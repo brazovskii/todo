@@ -11,6 +11,7 @@ const initialState: TodoState = {
     totalCount: 200,
     title: '',
     modalActive: false,
+    completed: false
 };
 
 export const todoSlice = createSlice({
@@ -46,6 +47,14 @@ export const todoSlice = createSlice({
                 (el.id === action.payload) ? {...el, title: state.title} : {...el}
             )
         },
+        setCompleted(state, action: PayloadAction<boolean>) {
+            state.completed = action.payload
+        },
+        setCheck(state, action: PayloadAction<ITodo[] | number>) {
+            state.todos = state.todos.map(el =>
+                (el.id === action.payload) ? {...el, completed: state.completed} : {...el}
+            )
+        },
     },
 });
 
@@ -58,6 +67,8 @@ export const {
     createTodo,
     updateTodo,
     getNewTitle,
+    setCheck,
+    setCompleted
 } = todoSlice.actions
 
 export default todoSlice.reducer;

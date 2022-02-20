@@ -10,8 +10,9 @@ function ModalCreate() {
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         if (title) {
             event.preventDefault();
-            const id = +new Date()
-            dispatch(createTodo({title, id}));
+            const id = +new Date();
+            const completed = false
+            dispatch(createTodo({title, id, completed}));
             dispatch(getNewTitle(''))
         } else {
             event.preventDefault();

@@ -8,5 +8,6 @@ export interface TodoState {
     perPage: number;
     totalCount: number;
     title: string;
-    modalActive: boolean
+    modalActive: boolean;
+    completed: boolean
 }
