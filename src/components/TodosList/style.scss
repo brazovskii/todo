@@ -13,7 +13,7 @@
   &__btn {
     text-align: center;
     color: white;
-    padding: 1rem;
+    padding: 1.1rem;
     font-size: 1.5rem;
     background-color: #28a128;
     border-radius: 1rem;
@@ -28,12 +28,17 @@
   }
 
   .pages {
+    display: flex;
+    align-items: center;
     margin: 20px 0;
 
     .page, .current-page {
       border: 1px solid lightgray;
       border-radius: 100%;
-      padding: 5px 10px;
+      height: 2rem;
+      font-size: 1.5rem;
+      width: 2rem;
+      padding: 5px 8px;
       margin: 0 10px;
       cursor: pointer;
       text-align: center;
@@ -41,8 +46,9 @@
     }
 
     .current-page {
-      border: 2px solid gray;
+      border: 2px solid #28a128;
       font-weight: 700;
+      color:#28a128;
     }
   }
 }

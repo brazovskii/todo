@@ -1,8 +1,10 @@
 import React from 'react';
 import './style.scss'
-import {NavLink, Outlet} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Home() {
+
+
     return (
         <div className={'home'}>
             <img className={'home__picture'}
@@ -10,9 +12,7 @@ function Home() {
                  alt={'todo'}/>
             <div className={'home__footer'}>
                 <span className={'home__description'}>Record all your todos, track their progress, mark and delete completed todos!</span>
-                <NavLink to={'todo'}
-                         className={"home__btn"}> Watch todo
-                </NavLink>
+                <NavLink to={'todo'} className={"home__btn"}>{'Watch todo'}</NavLink>
             </div>
         </div>
     );

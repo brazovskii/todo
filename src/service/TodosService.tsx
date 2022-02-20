@@ -1,7 +1,9 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import {ITodo} from "../models/ITodo";
 
-
+/*Изначально хотел сделать с RTK Query,
+вариант рабочий,только визуально ничего не видно
+*/
 export const todosAPI = createApi({
     reducerPath: "todosAPI",
     baseQuery: fetchBaseQuery({
